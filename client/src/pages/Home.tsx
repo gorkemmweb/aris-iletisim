@@ -26,6 +26,7 @@ import {
   Wrench,
   Shield,
   ThumbsUp,
+  Instagram,
 } from "lucide-react";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuGY4YANnxurT2Umd6U/hero-bg-ds326BGnJHwaepjYcFaY9s.webp";
@@ -433,6 +434,19 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+              
+              <div className="mt-8 flex items-center gap-4">
+                <span className="text-white/70 text-sm">Bizi sosyal medyada takip edin:</span>
+                <a
+                  href="https://instagram.com/aris_iletisim_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 text-white px-4 py-2 rounded-lg font-medium transition-all shadow-md hover:shadow-lg"
+                >
+                  <Instagram className="w-4 h-4" />
+                  @aris_iletisim_
+                </a>
+              </div>
             </AnimatedSection>
           </div>
         </div>
@@ -743,6 +757,15 @@ export default function Home() {
                 className="w-9 h-9 rounded-full bg-white/10 hover:bg-amber-500 flex items-center justify-center text-white/60 hover:text-white transition-all"
               >
                 <MapPin className="w-4 h-4" />
+              </a>
+              <a
+                href="https://instagram.com/aris_iletisim_"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-pink-500 flex items-center justify-center text-white/60 hover:text-white transition-all"
+                title="Instagram'da takip edin"
+              >
+                <Instagram className="w-4 h-4" />
               </a>
             </div>
           </div>
