@@ -32,6 +32,13 @@ const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuG
 const REPAIR_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuGY4YANnxurT2Umd6U/repair-service-VzxQFxDzBdYkeHaemssxbd.webp";
 const SHOP_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuGY4YANnxurT2Umd6U/shop-front-QEitFTJVbWghhmtzgg7t8c.webp";
 
+// Gallery images
+const GALLERY_SHOP = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuGY4YANnxurT2Umd6U/gallery-shop-interior-DimM8NE9Aw5Gh2nR47ju75.webp";
+const GALLERY_REPAIR = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuGY4YANnxurT2Umd6U/gallery-repair-process-JNyXQpbsWRsi4YihNDn6xT.webp";
+const GALLERY_BEFORE_AFTER = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuGY4YANnxurT2Umd6U/gallery-before-after-nVyGtCV6UpXuC2xVetNdYy.webp";
+const GALLERY_ACCESSORIES = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuGY4YANnxurT2Umd6U/gallery-accessories-6aiLKMMY6WGZ9dcLJeXcaw.webp";
+const GALLERY_SERVICE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663485517259/fPQzuGY4YANnxurT2Umd6U/gallery-customer-service-RqXHRPd5hd3n2jz6ApSSvo.webp";
+
 const services = [
   {
     icon: Smartphone,
@@ -167,6 +174,7 @@ export default function Home() {
             {[
               { label: "Hizmetler", id: "hizmetler" },
               { label: "Hakkımızda", id: "hakkimizda" },
+              { label: "Galeri", id: "galeri" },
               { label: "Yorumlar", id: "yorumlar" },
               { label: "İletişim", id: "iletisim" },
             ].map((item) => (
@@ -205,6 +213,7 @@ export default function Home() {
               {[
                 { label: "Hizmetler", id: "hizmetler" },
                 { label: "Hakkımızda", id: "hakkimizda" },
+                { label: "Galeri", id: "galeri" },
                 { label: "Yorumlar", id: "yorumlar" },
                 { label: "İletişim", id: "iletisim" },
               ].map((item) => (
@@ -425,6 +434,52 @@ export default function Home() {
                 ))}
               </div>
             </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── GALERİSİ ─── */}
+      <section id="galeri" className="py-20 bg-white">
+        <div className="container">
+          <AnimatedSection>
+            <div className="text-center mb-14">
+              <span className="text-amber-600 font-semibold text-sm uppercase tracking-widest">
+                Çalışmalarımız
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl font-800 text-[#0d1f3c] mt-2 mb-4">
+                Fotoğraf Galerisi
+              </h2>
+              <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
+                Dükkanımız, tamir süreçlerimiz ve başarılı onarımlarımızdan görseller.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { img: GALLERY_SHOP, title: "Dükkan İçi", desc: "Modern ve organize çalışma alanı" },
+              { img: GALLERY_REPAIR, title: "Tamir Süreci", desc: "Hassas ve profesyonel çalışma" },
+              { img: GALLERY_BEFORE_AFTER, title: "Önce-Sonra", desc: "Kırık ekrandan mükemmel onarıma" },
+              { img: GALLERY_ACCESSORIES, title: "Aksesuar Satışı", desc: "Kaliteli ve orijinal ürünler" },
+              { img: GALLERY_SERVICE, title: "Müşteri Hizmetleri", desc: "Sıcak ve profesyonel destek" },
+            ].map((item, i) => (
+              <AnimatedSection key={item.title}>
+                <div
+                  className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+                  style={{ transitionDelay: `${i * 60}ms` }}
+                >
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1f3c]/90 via-[#0d1f3c]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 className="font-heading font-700 text-white text-lg mb-1">{item.title}</h3>
+                    <p className="text-white/80 text-sm">{item.desc}</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>
