@@ -182,10 +182,10 @@ export default function Home() {
               href="https://wa.me/905551234567"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-green-500/30"
+              className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-green-500/30" style={{backgroundColor: '#ed0c0c'}}
             >
               <MessageCircle className="w-4 h-4" />
-              WhatsApp
+              
             </a>
           </nav>
 
@@ -248,7 +248,7 @@ export default function Home() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/40 text-amber-300 px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
               <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-              Güvenilir Teknik Servis
+              TURKCEL BAYİİ
             </div>
 
             <h1 className="font-heading text-4xl md:text-6xl font-900 text-white leading-tight mb-6">
@@ -271,20 +271,20 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+905551234567"
-                className="flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-400 text-[#0d1f3c] font-heading font-800 px-8 py-4 rounded-xl text-lg shadow-xl hover:shadow-amber-500/40 transition-all hover:-translate-y-0.5 active:translate-y-0"
+                href="tel:+905314333131"
+                className="flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-400 text-[#0d1f3c] font-heading font-800 px-8 py-4 rounded-xl text-lg shadow-xl hover:shadow-amber-500/40 transition-all hover:-translate-y-0.5 active:translate-y-0" style={{paddingTop: '0px', paddingRight: '0px', paddingBottom: '0px', paddingLeft: '0px'}}
               >
                 <Phone className="w-5 h-5" />
-                Hemen Ara
+                
               </a>
               <a
                 href="https://wa.me/905551234567"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-400 text-white font-heading font-700 px-8 py-4 rounded-xl text-lg shadow-xl hover:shadow-green-500/40 transition-all hover:-translate-y-0.5 active:translate-y-0"
+                className="flex items-center justify-center gap-3 bg-green-500 hover:bg-green-400 text-white font-heading font-700 px-8 py-4 rounded-xl text-lg shadow-xl hover:shadow-green-500/40 transition-all hover:-translate-y-0.5 active:translate-y-0" style={{paddingTop: '0px', paddingRight: '0px', paddingLeft: '0px'}}
               >
                 <MessageCircle className="w-5 h-5" />
-                WhatsApp
+                
               </a>
             </div>
 
@@ -341,7 +341,7 @@ export default function Home() {
                 Hizmetlerimiz
               </h2>
               <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-                Tüm marka ve model telefonlar için profesyonel tamir hizmeti sunuyoruz.
+                Birçok marka ve model telefonlar için profesyonel tamir hizmeti sunuyoruz.
               </p>
             </div>
           </AnimatedSection>
@@ -502,11 +502,11 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="tel:+905551234567"
+                    href="tel:+905314333131"
                     className="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-[#0d1f3c] font-heading font-700 px-6 py-3 rounded-xl transition-all shadow-lg"
                   >
                     <Phone className="w-4 h-4" />
-                    Ara: 0555 123 45 67
+                    ARA
                   </a>
                   <a
                     href="https://wa.me/905551234567"
@@ -546,23 +546,23 @@ export default function Home() {
                   {
                     icon: Phone,
                     title: "Telefon",
-                    value: "0555 123 45 67",
-                    href: "tel:+905551234567",
+                    value: "0531 433 31 31",
+                    href: "tel:+905314333131",
                     color: "bg-blue-100 text-blue-600",
                     action: "Hemen Ara",
                   },
                   {
                     icon: MessageCircle,
                     title: "WhatsApp",
-                    value: "0555 123 45 67",
-                    href: "https://wa.me/905551234567",
+                    value: "0531 433 31 31",
+                    href: "https://wa.me/905314333131",
                     color: "bg-green-100 text-green-600",
                     action: "Mesaj Gönder",
                   },
                   {
                     icon: MapPin,
                     title: "Adres",
-                    value: "Merkez Mah. Atatürk Cad. No:12, Şehir",
+                    value: "Atatürk, Cumhuriyet Cd., 31795 Samandağ/Hatay",
                     href: "https://maps.apple.com/?q=Arış+İletişim+Teknik+Servis",
                     color: "bg-amber-100 text-amber-600",
                     action: "Yol Tarifi Al",
