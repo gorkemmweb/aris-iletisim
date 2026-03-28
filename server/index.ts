@@ -2,6 +2,7 @@ import express from "express";
 import { createServer } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
+import fs from "fs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,10 +18,6 @@ async function startServer() {
       : path.resolve(__dirname, "..", "dist");
 
   console.log(`[${process.env.NODE_ENV || 'development'}] Static path: ${staticPath}`);
-  console.log(`[${process.env.NODE_ENV || 'development'}] __dirname: ${__dirname}`);
-  console.log(`[${process.env.NODE_ENV || 'development'}] NODE_ENV: ${process.env.NODE_ENV}`);
-  console.log(`[${process.env.NODE_ENV || 'development'}] index.html exists: ${require('fs').existsSync(path.join(staticPath, 'index.html'))}`);
-  console.log(`[${process.env.NODE_ENV || 'development'}] staticPath contents: ${require('fs').readdirSync(staticPath).join(', ')}`);
   
 
   app.use(express.static(staticPath));
