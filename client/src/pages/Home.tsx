@@ -102,8 +102,7 @@ const reviews = [
 
 const stats = [
   { value: "500+", label: "Mutlu Müşteri" },
-  { value: "5+", label: "Yıl Deneyim" },
-  { value: "1 Saat", label: "Ortalama Tamir" },
+  { value: "15+", label: "Yıl Deneyim" },
   { value: "%100", label: "Müşteri Memnuniyeti" },
 ];
 
@@ -563,11 +562,11 @@ export default function Home() {
             <div className="container">
               <AnimatedSection>
                 <h2 className="font-heading text-2xl md:text-4xl font-800 text-white mb-4">
-                  Telefonunuz için<br />
-                  <span className="text-amber-400">Hemen Randevu Alın</span>
+                  <span className="text-red-400">Paket Yükleme ve Fatura İşlemleri</span><br />
+                  <span className="text-white">Telefon veya WhatsApp Yoluyla Yapılmamaktadır</span>
                 </h2>
                 <p className="text-white/70 mb-6 max-w-sm">
-                  Bizi arayın veya WhatsApp'tan yazın, en kısa sürede size dönelim.
+                  Diğer tüm hizmetler için bizi arayın veya WhatsApp'tan yazın, en kısa sürede size dönelim.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
@@ -577,15 +576,7 @@ export default function Home() {
                     <Phone className="w-4 h-4" />
                     ARA
                   </a>
-                  <a
-                    href="https://wa.me/905551234567"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white font-heading font-700 px-6 py-3 rounded-xl transition-all shadow-lg"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    WhatsApp
-                  </a>
+
                 </div>
               </AnimatedSection>
             </div>
