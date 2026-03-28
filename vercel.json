@@ -1,14 +1,14 @@
 {
   "buildCommand": "pnpm build",
   "outputDirectory": "dist/public",
-  "framework": "other",
+  "framework": "react-router",
   "env": {
     "NODE_ENV": "production"
   },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
