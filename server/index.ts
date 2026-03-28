@@ -10,11 +10,18 @@ async function startServer() {
   const app = express();
   const server = createServer(app);
 
-  // Serve static files from dist/public in production
+  // Serve static files from dist in production
   const staticPath =
     process.env.NODE_ENV === "production"
       ? path.resolve(__dirname, "public")
-      : path.resolve(__dirname, "..", "dist", "public");
+      : path.resolve(__dirname, "..", "dist");
+
+  console.log(`[${process.env.NODE_ENV || 'development'}] Static path: ${staticPath}`);
+  console.log(`[${process.env.NODE_ENV || 'development'}] __dirname: ${__dirname}`);
+  console.log(`[${process.env.NODE_ENV || 'development'}] NODE_ENV: ${process.env.NODE_ENV}`);
+  console.log(`[${process.env.NODE_ENV || 'development'}] index.html exists: ${require('fs').existsSync(path.join(staticPath, 'index.html'))}`);
+  console.log(`[${process.env.NODE_ENV || 'development'}] staticPath contents: ${require('fs').readdirSync(staticPath).join(', ')}`);
+  
 
   app.use(express.static(staticPath));
 
